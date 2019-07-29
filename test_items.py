@@ -1,7 +1,7 @@
 from selenium import webdriver
 import time
 
-def test_link(lang, browser):
+def test_link_language(lang, browser):
 
     link = ("http://selenium1py.pythonanywhere.com/{}/catalogue/coders-at-work_207/".format(lang))
 #    print(link)
