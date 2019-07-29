@@ -7,7 +7,7 @@ def pytest_addoption(parser):
 
 @pytest.fixture(scope="function")
 
-def lang(request):
+def test_lang(request):
     br_lang = request.config.option.language
     if br_lang is None:
         pytest.skip()
@@ -15,7 +15,7 @@ def lang(request):
 
 @pytest.fixture(scope="function")
 
-def browser(request):
+def test_browser(request):
     browser = webdriver.Chrome()
     return browser
 
