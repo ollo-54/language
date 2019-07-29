@@ -1,4 +1,5 @@
 from selenium import webdriver
+import time
 
 def test_link(lang, browser):
 
@@ -6,6 +7,7 @@ def test_link(lang, browser):
 #    print(link)
     browser.get(link)
     button = browser.find_element_by_class_name("btn-add-to-basket")
+#    time.sleep(30)
     assert button
     browser.quit()
    
